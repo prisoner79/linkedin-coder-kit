@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h3 className="text-2xl font-bold">
-              RK<span className="text-tech-blue">.dev</span>
+              RC<span className="text-tech-blue">.dev</span>
             </h3>
             <p className="text-gray-400 mt-2">
               Web Developer & UI Designer
