@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +17,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 35%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -96,6 +100,33 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+    scroll-behavior: smooth;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative py-1 px-2 text-gray-700 hover:text-tech-blue transition-colors duration-300 cursor-pointer after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-tech-blue after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-6 text-tech-blue relative pb-2 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-1/2 after:h-1 after:bg-tech-blue;
+  }
+  
+  .tech-badge {
+    @apply px-3 py-1 bg-tech-blue/10 text-tech-blue rounded-full text-sm font-medium;
+  }
+
+  .timeline-item {
+    @apply relative pl-8 pb-8 before:content-[''] before:absolute before:left-0 before:top-1 before:w-3 before:h-3 before:rounded-full before:bg-tech-blue after:content-[''] after:absolute after:left-[5.5px] after:top-4 after:bottom-0 after:w-0.5 after:bg-tech-blue/30 last:after:hidden;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, rgba(13, 71, 161, 0.1) 0%, rgba(25, 118, 210, 0.1) 100%);
 }
