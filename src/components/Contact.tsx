@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { GitHub, Linkedin, Mail, MapPin, Phone, SendHorizontal } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, SendHorizontal } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact: React.FC = () => {
