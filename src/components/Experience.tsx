@@ -18,7 +18,7 @@ const Experience: React.FC = () => {
                   <div>
                     <div className="w-16 h-16 bg-white rounded-md p-2 mb-4">
                       <img 
-                        src="/lovable-uploads/eb0ebb13-8e7d-4253-90ea-210a6553efa9.png" 
+                        src="/lovable-uploads/d28f9b12-b4f4-4eef-9fc4-fcad810a3d7d.png" 
                         alt="Learnshala" 
                         className="w-full h-full object-contain"
                       />
